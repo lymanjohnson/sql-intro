@@ -1,0 +1,8 @@
+CREATE TABLE todos (
+  id SERIAL PRIMARY KEY UNIQUE NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  details VARCHAR(3000) NULL,
+  priority INT NOT NULL DEFAULT '1',
+  created_at TIME NOT NULL,
+  completed_at TIME NULL
+)
